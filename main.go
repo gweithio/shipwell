@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	apiKey = os.Getenv("API_KEY")
+	apiKey = os.Getenv("API_TOKEN")
 )
 
 type BuildStacks struct {
