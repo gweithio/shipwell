@@ -110,7 +110,7 @@ func main() {
 
 	req.Header = http.Header{
 		"Accept":        []string{"application/vnd.heroku+json; version=3"},
-		"Authorization": []string{"Bearer", os.Getenv("API_TOKEN")},
+		"Authorization": []string{"Bearer", apiKey},
 	}
 
 	resp, err := client.Do(req)
